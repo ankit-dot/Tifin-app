@@ -1,5 +1,5 @@
-.container{
-    display:flex;
+.container {
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -7,17 +7,17 @@
 }
 
 .details {
-    width: 28rem;
+    width: 25rem;
 }
 
-.details form{
-    display: flex;
+.details form {
+    display:flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.register {
-    display:flex;
+.login {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
