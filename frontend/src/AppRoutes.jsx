@@ -5,6 +5,8 @@ import FoodPage from "./Pages/Food/FoodPage";
 import Cart from "./Pages/Cart/CartPage";
 import LoginPage from "./Pages/Login/LoginPage";
 import RegisterPage from "./components/Register/RegisterPage";
+import CheckoutPage from "./Pages/Checkout/CheckoutPage";
+import AuthRoute from "./components/AuthRoute/AuthRoute";
 function AppRoutes() {
   return (
     <Routes>
@@ -15,6 +17,14 @@ function AppRoutes() {
       <Route path="/cart" element={<Cart />} />
       <Route path="/login" element={<LoginPage />} />
       <Route path="/register" element={<RegisterPage />} />
+      <Route
+        path="/checkout"
+        element={
+          <AuthRoute>
+            <CheckoutPage />
+          </AuthRoute>
+        }
+      />
     </Routes>
   );
 }
