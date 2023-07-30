@@ -1,8 +1,8 @@
 export default function Price({ price, locale, currency }) {
   const formatPrice = () => {
     return new Intl.NumberFormat(locale, {
-      style: 'currency',
-      currency
+      style: "currency",
+      currency,
     }).format(price);
   };
 
@@ -10,8 +10,6 @@ export default function Price({ price, locale, currency }) {
 }
 
 Price.defaultProps = {
-    locale: 'en-US',
-    currency:'USD',
+  locale: "en-US",
+  currency: "INR",
 };
-
-
